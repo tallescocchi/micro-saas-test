@@ -1,7 +1,19 @@
+import {
+  DashboardPage,
+  DashboardPageHeader,
+  DashboardPageHeaderTitle,
+  DashboardPageMain,
+} from '@/components/dashboard/page'
+
 export default function Page() {
   return (
-    <main className="flex items-center justify-center h-screen">
-      <h2>Settings</h2>
-    </main>
+    <DashboardPage>
+      <DashboardPageHeader>
+        <DashboardPageHeaderTitle>Configurações</DashboardPageHeaderTitle>
+      </DashboardPageHeader>
+      <DashboardPageMain>
+        <h2>Configurações</h2>
+      </DashboardPageMain>
+    </DashboardPage>
   )
 }
